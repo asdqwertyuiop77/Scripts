@@ -101,7 +101,10 @@ local function Decompile(bytecode)
 					insnTable = {},
 					constsTable = {},
 					innerProtoTable = {},
-
+					numParams = 0,
+					maxStackSize = 0,
+					numUpvalues = 0,
+					isVarArg = 0,
 					smallLineInfo = {},
 					largeLineInfo = {},
 					-- stores information about the first instruction to help detect inlining
